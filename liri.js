@@ -105,7 +105,6 @@ function movieThis(movie) {
         if (!error) {
             let data = JSON.parse(body);
         
-        console.log(data);
         //Title
             let title = data.Title;
         //Year Movie came out
@@ -114,7 +113,6 @@ function movieThis(movie) {
             let imdbRating = data.imdbRating;
         //Rotten Tomatoes Rating
             let rottenRating = data.Ratings[1].Value;
-            console.log(rottenRating);
         //Production Country
             let country = data.Country;
         //Language
